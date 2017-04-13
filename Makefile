@@ -11,6 +11,9 @@ ${GOPATH}/bin/mock-registry: $(shell find cmd/mock-registry)
 run: install vendor
 	@${GOPATH}/src/github.com/fusor/ansible-service-broker/scripts/runbroker.sh dev
 
+deploy:
+	@${GOPATH}/src/github.com/fusor/ansible-service-broker/scripts/deploy.sh
+
 run-mock-registry: ${GOPATH}/bin/mock-registry vendor
 	@${GOPATH}/src/github.com/fusor/ansible-service-broker/cmd/mock-registry/run.sh
 

@@ -28,6 +28,8 @@ gosrc
 etc/dev.config.yaml
 etc/prod.config.yaml
 
+build/broker
+
 .python-version
 
 main_*.yml
